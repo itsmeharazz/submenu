@@ -1,0 +1,134 @@
+:root{
+     --color-primary: #0073ff;
+     --color-font: #fff;
+     --color-bagrount: #333;
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.head{
+     width: 100%;
+     height: 5em;
+     background-color: var(--color-bagrount);
+     position: relative;
+}
+
+nav{
+     width: 98%;
+     padding: 1em;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+nav h1{
+     color: var(--color-font);
+     font-size:2.5em;
+}
+
+nav h1 span{
+     color: var(--color-primary);
+}
+nav ul{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+nav ul li{
+     list-style:none;
+     position: relative;
+     padding-left: 2.5em;
+     font-weight: 600;
+}
+nav ul li a{
+     color: var(--color-font);
+     text-decoration: none;
+     transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover{
+     color: var(--color-primary);
+}
+
+nav ul li a .fa-solid{
+     float: right;
+     margin-left: 10px;
+     padding-top: 2px;
+}
+
+.sub-menu{
+     display: none;
+}
+nav ul li:hover .sub-menu{
+     padding: 0.9em;
+     display: block;
+     left: 10%;
+     top: 100%;
+     position: absolute;
+     background-color: #333;
+}
+nav ul li:hover .sub-menu ul{
+     display: block;
+}
+
+nav ul li:hover .sub-menu ul li {
+     width: 130px;
+     padding: 10px;
+}
+
+.sub-1{
+     display: none;
+}
+.sub-menu ul li:hover .sub-1{
+     padding: 0.9em;
+     display: block;
+     left: 100%;
+     top: 0;
+     position: absolute;
+     background-color: #333;
+}
+.sub-menu ul li:hover .sub-1 ul{
+     display: block;
+}
+
+.sub-menu ul li:hover .sub-1 ul li {
+     width: 100px;
+     padding: 10px;
+}
+
+.gried{
+     width: 80%;
+     margin: 0 auto;
+     padding: 5em 0;
+     text-align: center;
+     
+}
+.gried h2{
+     margin-bottom: 2em;
+}
+.grid-item{
+     padding: 1em;
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     background-color: var(--color-primary);
+}
+
+.item-1{
+grid-column: 1 / span 2;
+grid-row: 1 / span 3;
+}
+.item-2{
+grid-column: 2 / span 3;
+grid-row: 1 / span 3;
+}
+
+
+
+.grid-item img{
+    padding: 0.5em;
+     width: 100%;
+     height: 100%;
+}
